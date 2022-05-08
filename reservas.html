@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>laKarpinteria</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="carta.html" >Carta</a>
+	                </li>
+					<li>
+	                    <a href="horario.html" >Horarios</a>
+	                </li>
+					<li>
+	                    <a href="identidad.html" >Quienes Somos</a>
+	                </li>
+					<li>
+	                    <a href="local.html" >Local</a>
+	                </li>
+	            </ul>
+	        </nav>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Carta" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="banner">
+	    <div class="banner-body">
+	        <h3 class="text-uppercase">Bienvenido a LAKARPINTERIA</h3>
+	        <p>Los mejores cafes y las mejores tapas, todo de la mejor calidad.</p>
+	        <a href="menu.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al carta</a>
+	    </div>
+	</div>
+	
+	<div style="background-color:#FFE900;">
+	    <div class="row">
+	        <div class="col-12 col-sm-12 col-md-6">
+	          <img src="./assets/img/identidad.jpg" alt="Nuestra Identidad<" width="100%" height="100%"> 
+	        </div>
+	        <div class="col-12 col-sm-12 col-md-6">
+				<br /><br /><br />
+	            <h3 class="text-center text-uppercase poppins-regular font-weight-bold"  style="color:#e800da;">Nuestra Identidad</h5>
+	            <p class="text-center">Aquí en <b>laKarpinteria</b> tendrás el mejor <b>café</b> y las mejores <b>tapas</b> para tomar el vermu. </p>
+				<p class="text-center">Nos distinguemos por ser los mejores en lo que hacemos</p>
+	        </div>
+	    </div>
+	</div>
+
+	<div style="background-color:#00c9f6;color:white;">
+	    <div class="row">
+	        <div class="col-12 col-sm-12 col-md-6">
+				<br /><br /><br />
+	            <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Servicios</h3>
+	            <p class="text-center">Nuestra especialidad es el cafe, y la tapas de tortilla de patata.</p>
+	        </div>
+			 <div class="col-12 col-sm-12 col-md-6">
+		         <img src="./assets/img/servicio.jpg" alt="Servicios" style="width:100%;height:100%"> 
+	        </div>
+	    </div>
+	</div>
+	
+	<div style="background-color:#e800da;color:white;">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6">
+				<img src="./assets/img/redes.jpg" alt="Servicios" width="100%" height="100%"> 
+	        </div>
+			
+			<div class="col-12 col-sm-12 col-md-6">
+				<br /><br /><br />
+	            <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Redes Sociales</h3>
+				<p class="text-center">Siguenos en instagram y facebook para vivir la full esperiencia</p>
+				<a>
+					<img  style="margin:auto; display:block; class="text-center"  src="./assets/img/insta.jpg" alt="Servicios" width="100px" height="100px"> 
+				</a>
+				<a>
+					<img  style="margin:auto; display:block; class="text-center"  src="./assets/img/face.jpg" alt="Servicios" width="100px" height="100px"> 
+				</a>
+				
+	            
+	        </div>
+		</div>	
+	</div>
+
+	<div style="background-color:#00c9f6;color:white;">
+	    <div class="row">
+	        <div class="col-12 col-sm-12 col-md-6">
+				<br /><br /><br />
+	            <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Donde encontrarnos:</h3>
+	            <p class="text-center">Estamos situados entre la calle .... donde.....</p>
+				<p class="text-center"><a href="https://www.google.es/maps/place/Pizzer%C3%ADa+Sapori+di+Napoli/@42.611277,-5.566007,14z/data=!4m5!3m4!1s0x0:0xc6e6196aad4d0c47!8m2!3d42.6116239!4d-5.5660201?hl=es">Google Maps</a></p>
+	        </div>
+			 <div class="col-12 col-sm-12 col-md-6">
+				<div id="map"></div>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Diego Franganillo 2022</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >España</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> León</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.faceb" class="footer-link" target="_blank" >
+	                            <i class="fab fa-instagram fa-fw"></i> Instagram
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+	
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuhe5slALNspsZDvcz2SHUI128daAIXhM&callback=initMap&libraries=&v=weekly"
+      async ></script>
+
+    <script>
+         function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 42.6210247, lng: -5.5470139 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+
+    </script>
+
+
+</body>
+</html>
